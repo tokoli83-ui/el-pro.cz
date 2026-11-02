@@ -1,0 +1,29 @@
+/* LM eP – elektro projekce · design tokens v1.0 (2026-10) */
+:root{
+  --elpro-blue:#29A9E1;      /* primární značková modrá */
+  --elpro-glow:#65E5FF;      /* světlý konec přechodu dlaždic */
+  --elpro-mid:#49C6EE;       /* střed přechodu, hover */
+  --elpro-tile:#A9DCF3;      /* světlá dlaždice (blesk), záhlaví tabulek */
+  --elpro-line:#C5E7F7;      /* dělicí linky, rámečky */
+  --elpro-mist:#F2FAFD;      /* jemné podbarvení, zebra */
+  --elpro-blue-text:#147AB0; /* modrý drobný text na bílé (AA 4.7:1) */
+  --elpro-blue-deep:#0F5F8C; /* tmavá modrá – hover tlačítek, velké plochy */
+  --elpro-ink:#1E2A33;       /* běžný text */
+  --elpro-ink-70:#4A5863;    /* sekundární text */
+  --elpro-ink-40:#8C99A3;    /* poznámky, placeholdery */
+  --elpro-dark:#0D1B26;      /* dark pozadí */
+  --elpro-dark-card:#132836; /* dark karta */
+  --elpro-ok:#2E9E5B; --elpro-warn:#E09B1F; --elpro-err:#D2423A; /* jen funkční stavy */
+  --elpro-tile-grad:radial-gradient(circle at 60% 40%,#65E5FF 0%,#49C6EE 45%,#2AA9E1 100%);
+  --elpro-font-display:'Century Gothic','Questrial','Avenir Next','Futura',Arial,sans-serif;
+  --elpro-font-text:'Lato','Calibri','Segoe UI',Arial,sans-serif;
+  --elpro-radius:2px;
+}
+html[data-theme="dark"]{
+  --bg:var(--elpro-dark); --surface:var(--elpro-dark-card); --text:#E6F3FA; --muted:#9FB6C4;
+  --accent:var(--elpro-blue); --accent-2:var(--elpro-glow); --line:#20394A;
+}
+html[data-theme="light"],:root{
+  --bg:#FFFFFF; --surface:var(--elpro-mist); --text:var(--elpro-ink); --muted:var(--elpro-ink-70);
+  --accent:var(--elpro-blue); --accent-2:var(--elpro-blue-text); --line:var(--elpro-line);
+}
