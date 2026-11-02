@@ -1,46 +1,131 @@
 <!doctype html>
-<html lang="cs">
+<html lang="cs" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Podpora – Stažené léky</title>
-<style>
-  :root { --inkoust: #1b2433; --tlumene: #5b6675; --primarni: #24467F; --podklad: #ffffff; }
-  @media (prefers-color-scheme: dark) { :root { --inkoust: #eef1f5; --tlumene: #aab4c3; --primarni: #86A9E8; --podklad: #0e1626; } }
-  body { margin: 0; padding: 32px 16px 48px; background: var(--podklad); color: var(--inkoust); font: 17px/1.55 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
-  main { max-width: 680px; margin: 0 auto; }
-  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 8px; }
-  h2 { font-size: 20px; margin: 28px 0 8px; }
-  p, li { margin: 0 0 10px; }
-  .meta { color: var(--tlumene); margin-bottom: 24px; }
-  a { color: var(--primarni); }
-  nav { margin-bottom: 24px; color: var(--tlumene); }
-</style>
+<meta name="description" content="Podpora aplikace Stažené léky – neoficiálního hlídače sdělení SÚKL pro iPhone, iPad a Mac. Časté otázky a kontakt.">
+<!-- @head -->
+<meta name="theme-color" content="#0D1B26">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/questrial-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/elpro-fonts.css?v=a601557e">
+<link rel="stylesheet" href="/assets/css/elpro-tokens.css?v=a601557e">
+<link rel="stylesheet" href="/assets/css/site.css?v=a601557e">
+<script>try{var t=localStorage.getItem("elpro-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="/assets/js/site.js?v=a601557e" defer></script>
+<link rel="canonical" href="https://el-pro.cz/stazeneleky/podpora.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="LM eP – elektro projekce">
+<meta property="og:title" content="Podpora – Stažené léky">
+<meta property="og:description" content="Podpora aplikace Stažené léky – neoficiálního hlídače sdělení SÚKL pro iPhone, iPad a Mac. Časté otázky a kontakt.">
+<meta property="og:url" content="https://el-pro.cz/stazeneleky/podpora.html">
+<meta property="og:image" content="https://el-pro.cz/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /@head -->
 </head>
 <body>
-<main>
-<nav><a href="podpora.html">Podpora</a> · <a href="soukromi.html">Zásady ochrany soukromí</a></nav>
-<h1>Stažené léky – podpora</h1>
-<p class="meta">Neoficiální hlídač sdělení SÚKL pro iPhone, iPad a Mac</p>
+<!-- @header -->
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <a class="brand" href="/" aria-label="LM eP – elektro projekce, úvodní stránka">
+      <img class="brand__logo brand__logo--dark" src="/assets/img/logo/lmep_logo_primary_white.png" width="540" height="168" alt="Lukáš Macura – elektro projekce">
+      <img class="brand__logo brand__logo--light" src="/assets/img/logo/lmep_logo_primary.png" width="540" height="168" alt="Lukáš Macura – elektro projekce">
+    </a>
+    <nav class="site-nav" id="hlavni-menu" aria-label="Hlavní navigace">
+      <a href="/aplikace/" aria-current="page">Aplikace</a>
+      <a href="/#projekce">Projekce</a>
+      <a href="/podpora/">Podpora</a>
+      <a href="/#kontakt">Kontakt</a>
+    </nav>
+    <div class="site-tools">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Přepnout vzhled">
+        <svg class="i-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.4 1.4M11.55 11.55l1.4 1.4M3.05 12.95l1.4-1.4M11.55 4.45l1.4-1.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        <svg class="i-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.6A5.8 5.8 0 0 1 6.4 2.5a5.8 5.8 0 1 0 7.1 7.1Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="hlavni-menu">Menu</button>
+    </div>
+    <p class="site-claim">Elektro projekce · Aplikace pro <span class="ap">iPHONE</span>, <span class="ap">iPAD</span> a Mac</p>
+  </div>
+</header>
+<!-- /@header -->
 
-<h2>Co aplikace dělá</h2>
-<p>Stažené léky sledují veřejné RSS kanály Státního ústavu pro kontrolu léčiv (SÚKL) a ukazují opatření k léčivým přípravkům: stažení z trhu, pozastavení distribuce, uvolnění, registrační důvody a upozornění na padělky. Na nová opatření ve sledovaných kanálech upozorní.</p>
+<main id="obsah">
+  <section class="page-head">
+    <div class="wrap">
+      <p class="crumbs"><a href="/aplikace/">Aplikace</a> / Stažené léky</p>
+      <h1>Stažené léky – podpora</h1>
+      <p class="lead">Neoficiální hlídač sdělení SÚKL pro iPhone, iPad a Mac</p>
+      <nav class="subnav" aria-label="Stránky aplikace">
+        <a class="chip" href="podpora.html" aria-current="page">Podpora</a>
+        <a class="chip chip--muted" href="soukromi.html">Zásady ochrany soukromí</a>
+        <a class="chip chip--muted" href="#en">English</a>
+      </nav>
+    </div>
+  </section>
 
-<h2>Časté otázky</h2>
-<p><strong>Seznam je prázdný nebo se nenačetl.</strong> Zkontrolujte připojení k internetu a přetáhněte seznam prstem dolů. Aplikace čte data přímo z sukl.gov.cz; pokud je web SÚKL dočasně nedostupný, zobrazí poslední známá data a hlášku o chybě kanálu.</p>
-<p><strong>Nechodí upozornění.</strong> V aplikaci otevřete nastavení (ikona posuvníků vpravo nahoře) a zapněte upozornění; systém se zeptá na povolení. V Nastavení iPhonu musí být pro aplikaci povolené Oznámení a Obnovování aplikací na pozadí (Obecné → Obnovování aplikací na pozadí). Kontrolu na pozadí plánuje iOS obvykle několikrát denně; při každém otevření aplikace proběhne kontrola hned.</p>
-<p><strong>Chci sledovat jen některé kanály.</strong> V nastavení vyberte kanály Závady v jakosti, Registrační důvody a Padělky podle potřeby.</p>
-<p><strong>Co znamenají barevné štítky.</strong> Štítek u každé položky říká typ opatření (stažení, pozastavení, uvolnění, padělek, informace pro pacienty a další). Podrobnosti, kód SÚKL, čísla šarží a důvod jsou vždy v odkazovaném sdělení SÚKL.</p>
-<p><strong>Jsou informace závazné?</strong> Aplikace zobrazuje pouze to, co SÚKL sám zveřejňuje, a u každé položky vede odkaz na zdroj. Závazné jsou vždy informace na sukl.gov.cz. Aplikace neposkytuje zdravotní rady a nenahrazuje poradu s lékařem nebo lékárníkem.</p>
+  <div class="wrap">
+    <div class="prose">
+      <h2>Co aplikace dělá</h2>
+      <p>Stažené léky sledují veřejné RSS kanály Státního ústavu pro kontrolu léčiv (SÚKL) a ukazují opatření k léčivým přípravkům: stažení z trhu, pozastavení distribuce, uvolnění, registrační důvody a upozornění na padělky. Na nová opatření ve sledovaných kanálech upozorní.</p>
 
-<h2>Soukromí</h2>
-<p>Aplikace nesbírá žádné osobní údaje. Podrobnosti najdete v <a href="soukromi.html">zásadách ochrany soukromí</a>.</p>
+      <h2>Časté otázky</h2>
+      <p><strong>Seznam je prázdný nebo se nenačetl.</strong> Zkontrolujte připojení k internetu a přetáhněte seznam prstem dolů. Aplikace čte data přímo z sukl.gov.cz; pokud je web SÚKL dočasně nedostupný, zobrazí poslední známá data a hlášku o chybě kanálu.</p>
+      <p><strong>Nechodí upozornění.</strong> V aplikaci otevřete nastavení (ikona posuvníků vpravo nahoře) a zapněte upozornění; systém se zeptá na povolení. V Nastavení iPhonu musí být pro aplikaci povolené Oznámení a Obnovování aplikací na pozadí (Obecné → Obnovování aplikací na pozadí). Kontrolu na pozadí plánuje iOS obvykle několikrát denně; při každém otevření aplikace proběhne kontrola hned.</p>
+      <p><strong>Chci sledovat jen některé kanály.</strong> V nastavení vyberte kanály Závady v jakosti, Registrační důvody a Padělky podle potřeby.</p>
+      <p><strong>Co znamenají barevné štítky.</strong> Štítek u každé položky říká typ opatření (stažení, pozastavení, uvolnění, padělek, informace pro pacienty a další). Podrobnosti, kód SÚKL, čísla šarží a důvod jsou vždy v odkazovaném sdělení SÚKL.</p>
+      <p><strong>Jsou informace závazné?</strong> Aplikace zobrazuje pouze to, co SÚKL sám zveřejňuje, a u každé položky vede odkaz na zdroj. Závazné jsou vždy informace na sukl.gov.cz. Aplikace neposkytuje zdravotní rady a nenahrazuje poradu s lékařem nebo lékárníkem.</p>
 
-<h2>Kontakt</h2>
-<p>Lukáš Macura, e‑mail <a href="mailto:info@el-pro.cz">info@el-pro.cz</a>. Napište, co se stalo, verzi aplikace a model zařízení.</p>
+      <h2>Soukromí</h2>
+      <p>Aplikace nesbírá žádné osobní údaje. Podrobnosti najdete v <a href="soukromi.html">zásadách ochrany soukromí</a>.</p>
 
-<h2>Support (English)</h2>
-<p>Stažené léky is an unofficial reader of the public RSS feeds of the Czech State Institute for Drug Control (SÚKL). It lists medicine recalls, suspensions and counterfeit warnings and notifies you about new items. It needs no account and collects no data. If the list does not load, check your connection and pull to refresh. For notifications, allow them in the app's settings and keep Background App Refresh enabled in iOS Settings. Contact: info@el-pro.cz.</p>
+      <h2>Kontakt</h2>
+      <p>Lukáš Macura, e‑mail <a href="mailto:info@el-pro.cz">info@el-pro.cz</a>. Napište, co se stalo, verzi aplikace a model zařízení.</p>
+
+      <div class="lang-en" lang="en">
+        <h2 id="en">Support (English)</h2>
+        <p>Stažené léky is an unofficial reader of the public RSS feeds of the Czech State Institute for Drug Control (SÚKL). It lists medicine recalls, suspensions and counterfeit warnings and notifies you about new items. It needs no account and collects no data. If the list does not load, check your connection and pull to refresh. For notifications, allow them in the app's settings and keep Background App Refresh enabled in iOS Settings. Contact: <a href="mailto:info@el-pro.cz">info@el-pro.cz</a>.</p>
+      </div>
+    </div>
+  </div>
 </main>
+
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <img class="site-footer__symbol site-footer__symbol--dark" src="/assets/img/logo/lmep_symbol_white.png" width="161" height="192" alt="" loading="lazy">
+      <img class="site-footer__symbol site-footer__symbol--light" src="/assets/img/logo/lmep_symbol.png" width="161" height="192" alt="" loading="lazy">
+    </div>
+    <address>
+      <strong>Ing. Lukáš Macura · LM eP – elektro projekce</strong><br>
+      Záchranářů 785, 735 14 Orlová – Poruba, Česká republika<br>
+      IČO 04246420 · neplátce DPH · fyzická osoba zapsaná v živnostenském rejstříku vedeném Městským úřadem Orlová, nezapsaná v obchodním rejstříku<br>
+      Autorizovaný technik pro technologická zařízení staveb ČKAIT – 1103802 (obor TT00)<br>
+      Tel. <a href="tel:+420724055980">+420 724 055 980</a> · E‑mail <a href="mailto:info@el-pro.cz">info@el-pro.cz</a>
+    </address>
+    <div class="site-footer__right">
+      <nav aria-label="Odkazy v patičce">
+        <a href="/aplikace/">Aplikace</a>
+        <a href="/podpora/">Podpora</a>
+        <a href="/soukromi/">Ochrana soukromí</a>
+      </nav>
+      <div class="badges">
+        <img src="/assets/img/logo/badge_ckait.png" width="101" height="96" alt="ČKAIT" loading="lazy">
+        <img src="/assets/img/logo/badge_ex.png" width="111" height="96" alt="Ex" loading="lazy">
+      </div>
+      <p class="small" style="margin:0">© 2026 Lukáš Macura</p>
+    </div>
+  </div>
+</footer>
+<!-- /@footer -->
 </body>
 </html>
