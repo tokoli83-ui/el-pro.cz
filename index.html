@@ -1,43 +1,243 @@
 <!doctype html>
-<html lang="cs">
+<html lang="cs" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Lukáš Macura – aplikace pro iPhone, iPad a Mac. Podpora a zásady ochrany soukromí.">
-<title>Lukáš Macura – el-pro.cz</title>
-<style>
-  :root { --inkoust: #1b2433; --tlumene: #5b6675; --primarni: #24467F; --podklad: #ffffff; --karta: #f3f5f8; }
-  @media (prefers-color-scheme: dark) { :root { --inkoust: #eef1f5; --tlumene: #aab4c3; --primarni: #86A9E8; --podklad: #0e1626; --karta: #172238; } }
-  body { margin: 0; padding: 48px 16px 56px; background: var(--podklad); color: var(--inkoust); font: 17px/1.55 -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
-  main { max-width: 680px; margin: 0 auto; }
-  h1 { font-size: 32px; line-height: 1.15; margin: 0 0 6px; }
-  h2 { font-size: 20px; margin: 36px 0 12px; }
-  p { margin: 0 0 10px; }
-  .meta { color: var(--tlumene); margin-bottom: 28px; }
-  a { color: var(--primarni); }
-  .karta { background: var(--karta); border-radius: 14px; padding: 18px 20px; margin: 0 0 14px; }
-  .karta h3 { margin: 0 0 6px; font-size: 19px; }
-  .karta p { margin: 0 0 8px; }
-  .odkazy a { margin-right: 18px; white-space: nowrap; }
-  footer { margin-top: 44px; color: var(--tlumene); font-size: 15px; }
-</style>
+<title>LM eP – elektro projekce · aplikace pro iPhone, iPad a Mac</title>
+<meta name="description" content="Ing. Lukáš Macura – elektro projekce, technické výpočty a oceňování, inženýrská a konzultační činnost (ČKAIT TT00, Ex). Aplikace pro iPhone, iPad a Mac v App Storu.">
+<!-- @head -->
+<meta name="theme-color" content="#0D1B26">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/questrial-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/lato-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/elpro-fonts.css?v=a601557e">
+<link rel="stylesheet" href="/assets/css/elpro-tokens.css?v=a601557e">
+<link rel="stylesheet" href="/assets/css/site.css?v=a601557e">
+<script>try{var t=localStorage.getItem("elpro-theme");if(t==="light"||t==="dark")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<script src="/assets/js/site.js?v=a601557e" defer></script>
+<link rel="canonical" href="https://el-pro.cz/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:site_name" content="LM eP – elektro projekce">
+<meta property="og:title" content="LM eP – elektro projekce · aplikace pro iPhone, iPad a Mac">
+<meta property="og:description" content="Ing. Lukáš Macura – elektro projekce, technické výpočty a oceňování, inženýrská a konzultační činnost (ČKAIT TT00, Ex). Aplikace pro iPhone, iPad a Mac v App Storu.">
+<meta property="og:url" content="https://el-pro.cz/">
+<meta property="og:image" content="https://el-pro.cz/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<!-- /@head -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "LM eP – elektro projekce",
+  "url": "https://el-pro.cz/",
+  "logo": "https://el-pro.cz/assets/img/logo/lmep_logo_primary.png",
+  "image": "https://el-pro.cz/assets/img/og.png",
+  "email": "info@el-pro.cz",
+  "telephone": "+420724055980",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Záchranářů 785",
+    "postalCode": "735 14",
+    "addressLocality": "Orlová – Poruba",
+    "addressCountry": "CZ"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Ing. Lukáš Macura",
+    "jobTitle": "Autorizovaný technik pro technologická zařízení staveb (ČKAIT 1103802)"
+  }
+}
+</script>
 </head>
 <body>
-<main>
-<h1>Lukáš Macura</h1>
-<p class="meta">Aplikace pro iPhone, iPad a Mac</p>
+<!-- @header -->
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+<header class="site-header">
+  <div class="wrap site-header__in">
+    <a class="brand" href="/" aria-label="LM eP – elektro projekce, úvodní stránka">
+      <img class="brand__logo brand__logo--dark" src="/assets/img/logo/lmep_logo_primary_white.png" width="540" height="168" alt="Lukáš Macura – elektro projekce">
+      <img class="brand__logo brand__logo--light" src="/assets/img/logo/lmep_logo_primary.png" width="540" height="168" alt="Lukáš Macura – elektro projekce">
+    </a>
+    <nav class="site-nav" id="hlavni-menu" aria-label="Hlavní navigace">
+      <a href="/aplikace/">Aplikace</a>
+      <a href="/#projekce">Projekce</a>
+      <a href="/podpora/">Podpora</a>
+      <a href="/#kontakt">Kontakt</a>
+    </nav>
+    <div class="site-tools">
+      <button class="icon-btn" type="button" data-theme-toggle aria-label="Přepnout vzhled">
+        <svg class="i-sun" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="3" fill="none" stroke="currentColor" stroke-width="1.3"/><path d="M8 1v2M8 13v2M1 8h2M13 8h2M3.05 3.05l1.4 1.4M11.55 11.55l1.4 1.4M3.05 12.95l1.4-1.4M11.55 4.45l1.4-1.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/></svg>
+        <svg class="i-moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.5 9.6A5.8 5.8 0 0 1 6.4 2.5a5.8 5.8 0 1 0 7.1 7.1Z" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="hlavni-menu">Menu</button>
+    </div>
+    <p class="site-claim">Elektro projekce · Aplikace pro <span class="ap">iPHONE</span>, <span class="ap">iPAD</span> a Mac</p>
+  </div>
+</header>
+<!-- /@header -->
 
-<h2>Aplikace</h2>
-<div class="karta">
-  <h3>Stažené léky</h3>
-  <p>Neoficiální hlídač sdělení SÚKL: stažení léčivých přípravků z trhu, pozastavení distribuce a upozornění na padělky, s upozorněním na každé nové opatření. Bez účtu, bez sběru dat.</p>
-  <p class="odkazy"><a href="stazeneleky/podpora.html">Podpora</a> <a href="stazeneleky/soukromi.html">Zásady ochrany soukromí</a></p>
-</div>
+<main id="obsah">
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="eyebrow">Ing. Lukáš Macura · LM eP</p>
+        <h1>Elektro projekce <span class="l2">a aplikace pro <span class="ap">iPHONE</span>, <span class="ap">iPAD</span> a Mac</span></h1>
+        <p class="lead">Elektro projekce, technické výpočty a oceňování, inženýrská a konzultační činnost. Vedle projekce vznikají aplikace pro iPhone, iPad a Mac – stahují se výhradně v App Storu.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="/aplikace/">Aplikace</a>
+          <a class="btn btn--secondary" href="#kontakt">Kontakt</a>
+        </div>
+      </div>
+      <div class="tiles" aria-hidden="true">
+        <span class="t-g"></span><span class="t-o"></span><span class="t-g"></span><span class="t-f"></span>
+        <span class="t-f"></span><span class="t-g"></span><span class="t-o"></span><span class="t-g"></span>
+        <span class="t-o"></span><span class="t-g"></span><span class="t-f"></span><span class="t-o"></span>
+      </div>
+    </div>
+  </section>
 
-<h2>Kontakt</h2>
-<p>E‑mail <a href="mailto:info@el-pro.cz">info@el-pro.cz</a></p>
+  <section class="section" id="aplikace" aria-labelledby="aplikace-nadpis">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Aplikace</p>
+          <h2 id="aplikace-nadpis">Pro <span class="ap">iPHONE</span>, <span class="ap">iPAD</span> a Mac</h2>
+          <p class="muted">Stažení i nákup výhradně v App Storu a Mac App Storu – platby, aktualizace i vrácení peněz zajišťuje Apple.</p>
+        </div>
+        <a class="btn btn--secondary" href="/aplikace/">Katalog aplikací</a>
+      </div>
+<!-- @apps -->
+<ul class="apps">
+  <li>
+    <article class="app-card">
+      <div class="app-card__top"><picture><source srcset="/assets/img/apps/stazene-leky.webp" type="image/webp"><img class="app-card__icon" src="/assets/img/apps/stazene-leky.png" width="256" height="256" alt="Ikona aplikace Stažené léky" loading="lazy"></picture><span class="chip">Brzy v App Storu</span></div>
+      <h3>Stažené léky</h3>
+      <p>Hlídač sdělení SÚKL: stažení léčivých přípravků z trhu, pozastavení distribuce a upozornění na padělky. Na každé nové opatření upozorní. Bez účtu, bez sběru dat.</p>
+      <p class="app-card__links"><a href="/stazeneleky/podpora.html">Podpora</a><a href="/stazeneleky/soukromi.html">Ochrana soukromí</a></p>
+      <div class="app-card__foot"><span class="platforms">iPhone · iPad · Mac</span><span class="price">Zdarma</span></div>
+    </article>
+  </li>
+  <li>
+    <article class="app-card">
+      <div class="app-card__top"><picture><source srcset="/assets/img/apps/pdfpodpis.webp" type="image/webp"><img class="app-card__icon" src="/assets/img/apps/pdfpodpis.png" width="256" height="256" alt="Ikona aplikace PDFPodpis" loading="lazy"></picture><span class="chip chip--muted">Připravujeme</span></div>
+      <h3>PDFPodpis</h3>
+      <p>Prohlížeč PDF s kvalifikovaným elektronickým podpisem a časovým razítkem – certifikát PostSignum nebo ČKAIT na tokenu či čipové kartě.</p>
+      <div class="app-card__foot"><span class="platforms">Mac</span></div>
+    </article>
+  </li>
+  <li>
+    <article class="app-card">
+      <div class="app-card__top"><picture><source srcset="/assets/img/apps/mxw01-printer.webp" type="image/webp"><img class="app-card__icon" src="/assets/img/apps/mxw01-printer.png" width="256" height="256" alt="Ikona aplikace MXW01 Printer" loading="lazy"></picture><span class="chip chip--muted">Připravujeme</span></div>
+      <h3>MXW01 Printer</h3>
+      <p>Tisk textu, obrázků, PDF, QR a čárových kódů na mini termotiskárnu WG Thermo Mini přes Bluetooth – bez účtu a bez telefonu.</p>
+      <div class="app-card__foot"><span class="platforms">Mac</span></div>
+    </article>
+  </li>
+  <li>
+    <article class="app-card">
+      <div class="app-card__top"><img class="app-card__icon" src="/assets/img/apps/lmprocad.svg" width="256" height="256" alt="Ikona aplikace LMproCAD" loading="lazy"><span class="chip chip--muted">Připravujeme</span></div>
+      <h3>LMproCAD</h3>
+      <p>Kreslení jednopólových schémat rozváděčů s knihovnou značek, kusovníkem a exportem do PDF.</p>
+      <div class="app-card__foot"><span class="platforms">Mac</span></div>
+    </article>
+  </li>
+</ul>
+<!-- /@apps -->
+    </div>
+  </section>
 
-<footer>© 2026 Lukáš Macura</footer>
+  <section class="section" id="projekce" aria-labelledby="projekce-nadpis">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Projekce</p>
+          <h2 id="projekce-nadpis">Elektro projekce a výpočty</h2>
+        </div>
+      </div>
+      <div class="services">
+        <div class="service">
+          <div class="service__tile"></div>
+          <h3>Elektro projekce</h3>
+          <p>Projektová dokumentace elektrických zařízení staveb.</p>
+        </div>
+        <div class="service">
+          <div class="service__tile service__tile--flat"></div>
+          <h3>Technické výpočty, oceňování</h3>
+          <p>Technické výpočty k projektům a jejich ocenění.</p>
+        </div>
+        <div class="service">
+          <div class="service__tile"></div>
+          <h3>Inženýrská a konzultační činnost</h3>
+          <p>Konzultace a inženýrská činnost k elektrickým zařízením staveb.</p>
+        </div>
+        <div class="service">
+          <div class="service__tile"></div>
+          <h3>Ex</h3>
+          <p>Elektrická zařízení v prostředí s nebezpečím výbuchu.</p>
+        </div>
+      </div>
+      <div class="auth">
+        <div class="badges">
+          <img src="/assets/img/logo/badge_ckait.png" width="101" height="96" alt="ČKAIT" loading="lazy">
+          <img src="/assets/img/logo/badge_ex.png" width="111" height="96" alt="Ex" loading="lazy">
+        </div>
+        <p>Ing. Lukáš Macura – autorizovaný technik pro technologická zařízení staveb, ČKAIT – 1103802 (obor TT00).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="kontakt" aria-labelledby="kontakt-nadpis">
+    <div class="wrap">
+      <div class="section__head">
+        <div>
+          <p class="eyebrow">Kontakt</p>
+          <h2 id="kontakt-nadpis">Napište nebo zavolejte</h2>
+          <p class="muted">S dotazem k aplikaci uveďte její název a verzi a model zařízení. Další pomoc najdete na stránce <a href="/podpora/">Podpora</a>.</p>
+        </div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><span class="kpi__label">E‑mail</span><span class="kpi__value"><a href="mailto:info@el-pro.cz">info@el-pro.cz</a></span></div>
+        <div class="kpi"><span class="kpi__label">Telefon</span><span class="kpi__value"><a href="tel:+420724055980">+420 724 055 980</a></span></div>
+        <div class="kpi"><span class="kpi__label">Sídlo</span><span class="kpi__value">Orlová – Poruba</span></div>
+      </div>
+    </div>
+  </section>
 </main>
+
+<!-- @footer -->
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div>
+      <img class="site-footer__symbol site-footer__symbol--dark" src="/assets/img/logo/lmep_symbol_white.png" width="161" height="192" alt="" loading="lazy">
+      <img class="site-footer__symbol site-footer__symbol--light" src="/assets/img/logo/lmep_symbol.png" width="161" height="192" alt="" loading="lazy">
+    </div>
+    <address>
+      <strong>Ing. Lukáš Macura · LM eP – elektro projekce</strong><br>
+      Záchranářů 785, 735 14 Orlová – Poruba, Česká republika<br>
+      IČO 04246420 · neplátce DPH · fyzická osoba zapsaná v živnostenském rejstříku vedeném Městským úřadem Orlová, nezapsaná v obchodním rejstříku<br>
+      Autorizovaný technik pro technologická zařízení staveb ČKAIT – 1103802 (obor TT00)<br>
+      Tel. <a href="tel:+420724055980">+420 724 055 980</a> · E‑mail <a href="mailto:info@el-pro.cz">info@el-pro.cz</a>
+    </address>
+    <div class="site-footer__right">
+      <nav aria-label="Odkazy v patičce">
+        <a href="/aplikace/">Aplikace</a>
+        <a href="/podpora/">Podpora</a>
+        <a href="/soukromi/">Ochrana soukromí</a>
+      </nav>
+      <div class="badges">
+        <img src="/assets/img/logo/badge_ckait.png" width="101" height="96" alt="ČKAIT" loading="lazy">
+        <img src="/assets/img/logo/badge_ex.png" width="111" height="96" alt="Ex" loading="lazy">
+      </div>
+      <p class="small" style="margin:0">© 2026 Lukáš Macura</p>
+    </div>
+  </div>
+</footer>
+<!-- /@footer -->
 </body>
 </html>
